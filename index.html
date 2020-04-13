@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="stl.css">
+  <style>
+    input[type=text] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="header-brand">The Right Example</a>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="developer.html">Developer</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="index-banner">
+      <div class="vertical-center">
+        <h2>Finding The Right Example<br> by leveraging market data</h2>
+        <form>
+          <div class="boxes">
+            <select id="make" onclick="getMake()">
+              <option value="Ferrari">Ferrari</option>
+              <option value="Lamborghini">Lamborghini</option>
+            </select>
+            <select id="model" onclick="getModel()">
+              <option value="allModels">All Models</option>
+            </select>
+          </div>
+        </form>
+        <a href="display.html" class="search">
+          <button type="submit" id="search" onclick="search()">Search</button>
+        </a>
+      </div>
+    </section>
+    <div class="makeResults">
+      <p>Make: </p>
+      <p id="result"><p>
+    </div>
+    <div class="modelResults">
+      <p>Model: </p>
+      <p id=result2></p>
+    </div>
+    <div class="text-logo">
+      <div class="logo-border">
+              <p>&nbspT R E&nbsp</p>
+      </div>
+    </div>
+    <div class="spacer">
+      <p>Following lines do not appear in actual site:</p>
+      <p id=date> Date</p>
+      <p id=avgfile>Historic Data file name</p>
+      <p id=curfile>Current Data file name</p>
+      <p id=jsdata></p>
+    </div>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="developer.html">Developer</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+    </ul>
+  </footer>
+</body>
+<script src="JS/main.js"></script>
+</html>
